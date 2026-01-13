@@ -1,15 +1,15 @@
 cat > README.md <<'EOF'
 # Ejercicio – Content Providers (PDDM)
 
-Este repositorio contiene **dos aplicaciones Android** que trabajan juntas mediante un ContentProvider para exponer y consumir datos de usuarios almacenados en SQLite.
+Este repositorio contiene dos aplicaciones Android que trabajan juntas mediante un ContentProvider para exponer y consumir datos de usuarios almacenados en SQLite.
 
 # Estructura del repositorio
 
 - App1_SQLiteUsers
-  Aplicación **proveedora**. Contiene la base de datos SQLite (tabla: Usuarios) y un ContentProvider publicado para exponer operaciones CRUD.
+  Aplicación proveedora**. Contiene la base de datos SQLite (tabla: Usuarios) y un ContentProvider publicado para exponer operaciones CRUD.
 
 - App2_CP_Client 
-  Aplicación **cliente**. Solicita : User Name y Password y valida credenciales **consultando el ContentProvider** de la App 1 (sin acceso directo a la BD).
+  Aplicación cliente. Solicita : User Name y Password y valida credenciales consultando el ContentProvider de la App 1 (sin acceso directo a la BD).
 
 # Objetivo cumplido
 
@@ -43,8 +43,8 @@ En la App 1 existe un usuario demo creado al inicializar la BD:
 
 El cliente consulta el provider de App 1 con:
 
-- **Authority: com.mastermovilesua.persistencia.preferencias.sqliteusers.usersprovider
-- **URI: content://com.mastermovilesua.persistencia.preferencias.sqliteusers.usersprovider/usuarios
+- Authority: com.mastermovilesua.persistencia.preferencias.sqliteusers.usersprovider
+- URI: content://com.mastermovilesua.persistencia.preferencias.sqliteusers.usersprovider/usuarios
 
 ## Cómo ejecutar (paso a paso)
 
@@ -62,7 +62,7 @@ Se han realizado vídeos demostrativos:
 
 # Problemas encontrados y solución
  1) adb: command not found (macOS)
-Problema:** el comando adb no estaba disponible en PATH.  
+Problema: el comando adb no estaba disponible en PATH.  
 Solución: usar la ruta completa del SDK:
 
 /Users/carls_c/Library/Android/sdk/platform-tools/adb
