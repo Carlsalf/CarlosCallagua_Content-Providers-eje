@@ -36,8 +36,8 @@ Este repositorio contiene dos aplicaciones Android que trabajan juntas mediante 
 # Datos de prueba
 
 En la App 1 existe un usuario demo creado al inicializar la BD:
-- **username: lolo
-- **password: 1234
+- username: lolo
+- password: 1234
 
 # URI / Authority usados
 
@@ -46,7 +46,7 @@ El cliente consulta el provider de App 1 con:
 - Authority: com.mastermovilesua.persistencia.preferencias.sqliteusers.usersprovider
 - URI: content://com.mastermovilesua.persistencia.preferencias.sqliteusers.usersprovider/usuarios
 
-## Cómo ejecutar (paso a paso)
+# Cómo ejecutar (paso a paso)
 
 1. Abrir App1_SQLiteUsers en Android Studio y ejecutar en el emulador/dispositivo.
 2. Abrir App2_CP_Client en Android Studio y ejecutar en el mismo emulador/dispositivo.
