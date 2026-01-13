@@ -1,0 +1,25 @@
+# Gradle
+.gradle/
+build/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# IntelliJ / Android Studio
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Kotlin
+.kotlin/
+
+# Mac
+.DS_Store
+
+# NDK
+.externalNativeBuild/
+.cxx/
+
+# Generated
+**/out/
